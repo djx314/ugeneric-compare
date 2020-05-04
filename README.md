@@ -13,13 +13,13 @@ Run
 ```scala
 sbt>slickRaw
 ```
-and write the await time to txt.  
+and write the waste time to txt.
 
 Run
 ```scala
 sbt>slickCompare
 ```
-and write the await time to txt.
+and write the waste time to txt.
 
 Then get the slick module test result:
 ```scala
