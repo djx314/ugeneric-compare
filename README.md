@@ -7,6 +7,7 @@ Compile time compare between ugeneric and each framework itself.
 Run
 ```scala
 sbt>aclean
+sbt>slickUpdate
 ```
 Run
 ```scala
@@ -24,6 +25,7 @@ Then get the slick module test result:
 ```scala
 [slick module]
 sbt>aclean
+sbt>slickUpdate
 sbt>slickRaw
 Takes 94s
 sbt>slickCompare
