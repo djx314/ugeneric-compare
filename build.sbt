@@ -26,6 +26,16 @@ sfmt := {
   (parent / Compile / scalafmt).value
 }
 
+val aupdate = taskKey[Unit]("update")
+
+aupdate := {
+  (slick / update).value
+  (slickCodegen / update).value
+  (slickRaw / update).value
+  (slickCompare / update).value
+  (parent / update).value
+}
+
 val aclean = taskKey[Unit]("clean")
 
 aclean := {
