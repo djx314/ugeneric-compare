@@ -1,7 +1,7 @@
 ugeneric-compare
 ===============
 
-Compile time compare between ugeneric and each framework itself.  
+Compile time compare between [ugeneric](https://github.com/scalax/ugeneric) and each framework itself.  
 
 ## Slick
 Run
