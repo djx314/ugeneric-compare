@@ -3,8 +3,9 @@ ProjectSettings.commonSettings
 val parent = (project in file("."))
 name := "ugeneric-compare"
 
-val slickDir = file(".") / "slick"
-val slick    = (project in slickDir)
+val modulesDir = "modules"
+val slickDir   = file(".") / modulesDir / "slick"
+val slick      = (project in slickDir)
 
 val slickCodegen = (project in slickDir / "codegen")
 val slickRaw     = (project in slickDir / "raw")
