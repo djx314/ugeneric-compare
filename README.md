@@ -22,8 +22,10 @@ and write the await time to txt.
 
 Then get the slick module test result:
 ```scala
+[slick module]
 sbt>aclean
 sbt>slickRaw
-
+Takes 94s
 sbt>slickCompare
+Takes 24s
 ```
