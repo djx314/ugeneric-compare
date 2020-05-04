@@ -1,7 +1,7 @@
 ugeneric-compare
 ===============
 
-Compile time compare between ugeneric and each raw framework.  
+Compile time compare between ugeneric and each framework itself.  
 
 ## Slick
 Run
