@@ -26,15 +26,7 @@ sfmt := {
   (parent / Compile / scalafmt).value
 }
 
-val aupdate = taskKey[Unit]("update")
 
-aupdate := {
-  (slick / update).value
-  (slickCodegen / update).value
-  (slickRaw / update).value
-  (slickCompare / update).value
-  (parent / update).value
-}
 
 val aclean = taskKey[Unit]("clean")
 
@@ -44,6 +36,15 @@ aclean := {
   (slickRaw / clean).value
   (slickCompare / clean).value
   (parent / clean).value
+}
+
+val slickUpdate = taskKey[Unit]("slickUpdate")
+
+slickUpdate := {
+  (slick / update).value
+  (slickCodegen / update).value
+  (slickRaw / update).value
+  (slickCompare / update).value
 }
 
 addCommandAlias("slickCodegen", ";slickCodegen/runMain HListCodegen; slickCodegen/runMain CompareCodegen")
