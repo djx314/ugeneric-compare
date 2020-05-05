@@ -1,29 +1,31 @@
 ugeneric-compare
 ===============
 
-Compile time compare between ugeneric and each framework itself.  
+Compile time compare between [ugeneric](https://github.com/scalax/ugeneric) and each framework itself.  
 
 ## Slick
 Run
 ```scala
 sbt>aclean
+sbt>slickUpdate
 ```
 Run
 ```scala
 sbt>slickRaw
 ```
-and write the await time to txt.  
+and write the waste time to txt.
 
 Run
 ```scala
 sbt>slickCompare
 ```
-and write the await time to txt.
+and write the waste time to txt.
 
 Then get the slick module test result:
 ```scala
 [slick module]
 sbt>aclean
+sbt>slickUpdate
 sbt>slickRaw
 Takes 94s
 sbt>slickCompare
