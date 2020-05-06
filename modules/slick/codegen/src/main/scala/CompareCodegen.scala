@@ -93,7 +93,7 @@ object CompareCodegen {
       codegen.map(
         _.writeToMultipleFiles(
           "utils.slick.UCanAccessDriver", // use our customized postgres driver
-          "./slick/compare/src/main/scala",
+          "./modules/slick/compare/src/main/scala",
           "models.access",
           "Tables"
         )

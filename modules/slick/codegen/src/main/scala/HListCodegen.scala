@@ -98,7 +98,7 @@ object HListCodegen {
       codegen.map(
         _.writeToMultipleFiles(
           "utils.slick.UCanAccessDriver", // use our customized postgres driver
-          "./slick/raw/src/main/scala",
+          "./modules/slick/raw/src/main/scala",
           "models.access",
           "Tables"
         )
