@@ -3,13 +3,14 @@ ProjectSettings.commonSettings
 val parent = (project in file("."))
 name := "ugeneric-compare"
 
-val modulesDir = "modules"
-val slickDir   = file(".") / modulesDir / "slick"
+val modulesDir = file(".") / "modules"
+val slickDir   = modulesDir / "slick"
 val slick      = (project in slickDir)
+val asuna      = (project in modulesDir / "asuna")
 
 val slickCodegen = (project in slickDir / "codegen")
 val slickRaw     = (project in slickDir / "raw")
-val slickCompare = (project in slickDir / "compare")
+val slickCompare = (project in slickDir / "compare").dependsOn(asuna)
 
 val sfmt = taskKey[Unit]("fmt")
 
@@ -19,14 +20,10 @@ sfmt := {
   (slickCodegen / Compile / scalafmtSbt).value
   (slickCodegen / Compile / scalafmt).value
   (slickRaw / Compile / scalafmtSbt).value
-  (slickRaw / Compile / scalafmt).value
   (slickCompare / Compile / scalafmtSbt).value
-  (slickCompare / Compile / scalafmt).value
   (parent / Compile / scalafmtSbt).value
   (parent / Compile / scalafmt).value
 }
-
-
 
 val aclean = taskKey[Unit]("clean")
 
