@@ -1,0 +1,13 @@
+@(minCount: Int, maxCount: Int, eachCount: Int)
+package ugeneric.compare
+
+import io.circe.{ Decoder, Encoder }
+
+@for(i <- minCount to maxCount) {
+trait UCirce@{i} {
+    @for(n <- 1 to eachCount) {
+        implicit val encoder@{n}@{i}: Encoder[Model@{n}@{i}] = org.scalax.ugeneric.circe.UCirce.encodeCaseClass
+        implicit val decoder@{n}@{i}: Decoder[Model@{n}@{i}] = org.scalax.ugeneric.circe.UCirce.decodeCaseClass
+    }
+}
+}

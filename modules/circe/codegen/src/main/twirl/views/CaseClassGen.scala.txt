@@ -1,0 +1,19 @@
+@(minCount: Int, maxCount: Int, eachCount: Int)
+package ugeneric.compare
+
+@for(i <- minCount to maxCount) {
+    @for(n <- 1 to eachCount) {
+        case class Model@{n}@{i}(@for(ii <- 1 to i) {
+            @if(ii % 4 == 0) {
+                i@{ii}: String @if(ii < i) { , }
+            } else if(ii % 4 == 1) {
+                i@{ii}: Int @if(ii < i) { , }
+            } else if (ii % 4 == 2) {
+                i@{ii}: Long @if(ii < i) { , }
+            } else {
+                i@{ii}: Short @if(ii < i) { , }
+            }
+        })
+    }
+
+}

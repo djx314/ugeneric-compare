@@ -12,4 +12,10 @@ object Dependencies {
 
   val ugenericSlick = "org.scalax" %% "ugeneric-slick" % "0.0.1-20200502SNAP3"
 
+  val circe = ("io.circe" %% "circe-derivation" % "0.13.0-M4") :: List(
+    "io.circe" %% "circe-core",
+    "io.circe" %% "circe-generic",
+    "io.circe" %% "circe-parser"
+  ).map(_ % "0.13.0")
+
 }

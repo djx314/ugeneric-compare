@@ -1,0 +1,14 @@
+@(minCount: Int, maxCount: Int, eachCount: Int)
+package ugeneric.compare
+
+import io.circe.generic.semiauto._
+import io.circe.{ Decoder, Encoder }
+
+@for(i <- minCount to maxCount) {
+trait SemiAuto@{i} {
+    @for(n <- 1 to eachCount) {
+        implicit val encoder@{n}@{i}: Encoder[Model@{n}@{i}] = deriveEncoder
+        implicit val decoder@{n}@{i}: Decoder[Model@{n}@{i}] = deriveDecoder
+    }
+}
+}
