@@ -25,7 +25,7 @@ sfmt := {
   (parent / Compile / scalafmt).value
 }
 
-val aclean = taskKey[Unit]("clean")
+val aclean = taskKey[Unit]("clean all")
 
 aclean := {
   (slick / clean).value
