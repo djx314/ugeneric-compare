@@ -43,9 +43,9 @@ sfmt := {
 
 }
 
-val aclean = taskKey[Unit]("clean all")
+val cleanAll = taskKey[Unit]("clean all")
 
-aclean := {
+cleanAll := {
   (slick / clean).value
   (slickCodegen / clean).value
   (slickRaw / clean).value
