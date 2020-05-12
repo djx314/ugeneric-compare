@@ -1,7 +1,7 @@
 @(minCount: Int, maxCount: Int, eachCount: Int)
 package ugeneric.compare
 
-import io.circe.generic.semiauto._
+import io.circe.generic.semiauto.{ deriveDecoder, deriveEncoder }
 import io.circe.{ Decoder, Encoder }
 
 @for(i <- minCount to maxCount) {

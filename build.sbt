@@ -20,6 +20,14 @@ val circeRaw        = (project in circeDir / "raw").dependsOn(circeModel)
 val circeDerivation = (project in circeDir / "derivation").dependsOn(circeModel)
 val circeCompare    = (project in circeDir / "compare").dependsOn(circeModel, asuna)
 
+val circeFailDir        = modulesDir / "circe-fail"
+val circeFail           = (project in circeFailDir)
+val circeFailCodegen    = (project in circeFailDir / "codegen")
+val circeFailModel      = (project in circeFailDir / "models")
+val circeFailRaw        = (project in circeFailDir / "raw").dependsOn(circeFailModel)
+val circeFailDerivation = (project in circeFailDir / "derivation").dependsOn(circeFailModel)
+val circeFailCompare    = (project in circeFailDir / "compare").dependsOn(circeFailModel, asuna)
+
 val sfmt = taskKey[Unit]("fmt")
 
 sfmt := {
@@ -86,3 +94,9 @@ addCommandAlias("circePre", ";circeModel/compile")
 addCommandAlias("circeRaw", ";circeRaw/compile")
 addCommandAlias("circeDerivation", ";circeDerivation/compile")
 addCommandAlias("circeCompare", ";circeCompare/compile")
+
+addCommandAlias("circeFailCodegen", ";circeFailCodegen/runMain ugeneric.compare.circe.fail.ModelCodeGen")
+addCommandAlias("circeFailPre", ";circeFailModel/compile")
+addCommandAlias("circeFailRaw", ";circeFailRaw/compile")
+addCommandAlias("circeFailDerivation", ";circeFailDerivation/compile")
+addCommandAlias("circeFailCompare", ";circeFailCompare/compile")

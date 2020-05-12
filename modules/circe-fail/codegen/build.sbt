@@ -1,0 +1,2 @@
+ProjectSettings.commonSettings
+enablePlugins(SbtTwirl)

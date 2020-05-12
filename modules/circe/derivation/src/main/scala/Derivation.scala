@@ -1,7 +1,7 @@
 package ugeneric.compare
 import io.circe.{ Decoder, Encoder }
 import io.circe.derivation.{ deriveDecoder, deriveEncoder }
-trait SemiAuto5 {
+trait Derivation5 {
 implicit val encoder15: Encoder[Model15] = deriveEncoder
 implicit val decoder15: Decoder[Model15] = deriveDecoder
 implicit val encoder25: Encoder[Model25] = deriveEncoder
@@ -19,7 +19,7 @@ implicit val decoder75: Decoder[Model75] = deriveDecoder
 implicit val encoder85: Encoder[Model85] = deriveEncoder
 implicit val decoder85: Decoder[Model85] = deriveDecoder
 }
-trait SemiAuto6 {
+trait Derivation6 {
 implicit val encoder16: Encoder[Model16] = deriveEncoder
 implicit val decoder16: Decoder[Model16] = deriveDecoder
 implicit val encoder26: Encoder[Model26] = deriveEncoder
@@ -37,7 +37,7 @@ implicit val decoder76: Decoder[Model76] = deriveDecoder
 implicit val encoder86: Encoder[Model86] = deriveEncoder
 implicit val decoder86: Decoder[Model86] = deriveDecoder
 }
-trait SemiAuto7 {
+trait Derivation7 {
 implicit val encoder17: Encoder[Model17] = deriveEncoder
 implicit val decoder17: Decoder[Model17] = deriveDecoder
 implicit val encoder27: Encoder[Model27] = deriveEncoder
@@ -55,7 +55,7 @@ implicit val decoder77: Decoder[Model77] = deriveDecoder
 implicit val encoder87: Encoder[Model87] = deriveEncoder
 implicit val decoder87: Decoder[Model87] = deriveDecoder
 }
-trait SemiAuto8 {
+trait Derivation8 {
 implicit val encoder18: Encoder[Model18] = deriveEncoder
 implicit val decoder18: Decoder[Model18] = deriveDecoder
 implicit val encoder28: Encoder[Model28] = deriveEncoder
@@ -73,7 +73,7 @@ implicit val decoder78: Decoder[Model78] = deriveDecoder
 implicit val encoder88: Encoder[Model88] = deriveEncoder
 implicit val decoder88: Decoder[Model88] = deriveDecoder
 }
-trait SemiAuto9 {
+trait Derivation9 {
 implicit val encoder19: Encoder[Model19] = deriveEncoder
 implicit val decoder19: Decoder[Model19] = deriveDecoder
 implicit val encoder29: Encoder[Model29] = deriveEncoder
@@ -91,7 +91,7 @@ implicit val decoder79: Decoder[Model79] = deriveDecoder
 implicit val encoder89: Encoder[Model89] = deriveEncoder
 implicit val decoder89: Decoder[Model89] = deriveDecoder
 }
-trait SemiAuto10 {
+trait Derivation10 {
 implicit val encoder110: Encoder[Model110] = deriveEncoder
 implicit val decoder110: Decoder[Model110] = deriveDecoder
 implicit val encoder210: Encoder[Model210] = deriveEncoder
@@ -109,7 +109,7 @@ implicit val decoder710: Decoder[Model710] = deriveDecoder
 implicit val encoder810: Encoder[Model810] = deriveEncoder
 implicit val decoder810: Decoder[Model810] = deriveDecoder
 }
-trait SemiAuto11 {
+trait Derivation11 {
 implicit val encoder111: Encoder[Model111] = deriveEncoder
 implicit val decoder111: Decoder[Model111] = deriveDecoder
 implicit val encoder211: Encoder[Model211] = deriveEncoder
@@ -127,7 +127,7 @@ implicit val decoder711: Decoder[Model711] = deriveDecoder
 implicit val encoder811: Encoder[Model811] = deriveEncoder
 implicit val decoder811: Decoder[Model811] = deriveDecoder
 }
-trait SemiAuto12 {
+trait Derivation12 {
 implicit val encoder112: Encoder[Model112] = deriveEncoder
 implicit val decoder112: Decoder[Model112] = deriveDecoder
 implicit val encoder212: Encoder[Model212] = deriveEncoder
@@ -145,7 +145,7 @@ implicit val decoder712: Decoder[Model712] = deriveDecoder
 implicit val encoder812: Encoder[Model812] = deriveEncoder
 implicit val decoder812: Decoder[Model812] = deriveDecoder
 }
-trait SemiAuto13 {
+trait Derivation13 {
 implicit val encoder113: Encoder[Model113] = deriveEncoder
 implicit val decoder113: Decoder[Model113] = deriveDecoder
 implicit val encoder213: Encoder[Model213] = deriveEncoder
@@ -163,7 +163,7 @@ implicit val decoder713: Decoder[Model713] = deriveDecoder
 implicit val encoder813: Encoder[Model813] = deriveEncoder
 implicit val decoder813: Decoder[Model813] = deriveDecoder
 }
-trait SemiAuto14 {
+trait Derivation14 {
 implicit val encoder114: Encoder[Model114] = deriveEncoder
 implicit val decoder114: Decoder[Model114] = deriveDecoder
 implicit val encoder214: Encoder[Model214] = deriveEncoder
@@ -181,7 +181,7 @@ implicit val decoder714: Decoder[Model714] = deriveDecoder
 implicit val encoder814: Encoder[Model814] = deriveEncoder
 implicit val decoder814: Decoder[Model814] = deriveDecoder
 }
-trait SemiAuto15 {
+trait Derivation15 {
 implicit val encoder115: Encoder[Model115] = deriveEncoder
 implicit val decoder115: Decoder[Model115] = deriveDecoder
 implicit val encoder215: Encoder[Model215] = deriveEncoder
@@ -199,7 +199,7 @@ implicit val decoder715: Decoder[Model715] = deriveDecoder
 implicit val encoder815: Encoder[Model815] = deriveEncoder
 implicit val decoder815: Decoder[Model815] = deriveDecoder
 }
-trait SemiAuto16 {
+trait Derivation16 {
 implicit val encoder116: Encoder[Model116] = deriveEncoder
 implicit val decoder116: Decoder[Model116] = deriveDecoder
 implicit val encoder216: Encoder[Model216] = deriveEncoder
@@ -217,7 +217,7 @@ implicit val decoder716: Decoder[Model716] = deriveDecoder
 implicit val encoder816: Encoder[Model816] = deriveEncoder
 implicit val decoder816: Decoder[Model816] = deriveDecoder
 }
-trait SemiAuto17 {
+trait Derivation17 {
 implicit val encoder117: Encoder[Model117] = deriveEncoder
 implicit val decoder117: Decoder[Model117] = deriveDecoder
 implicit val encoder217: Encoder[Model217] = deriveEncoder
@@ -235,7 +235,7 @@ implicit val decoder717: Decoder[Model717] = deriveDecoder
 implicit val encoder817: Encoder[Model817] = deriveEncoder
 implicit val decoder817: Decoder[Model817] = deriveDecoder
 }
-trait SemiAuto18 {
+trait Derivation18 {
 implicit val encoder118: Encoder[Model118] = deriveEncoder
 implicit val decoder118: Decoder[Model118] = deriveDecoder
 implicit val encoder218: Encoder[Model218] = deriveEncoder
@@ -253,7 +253,7 @@ implicit val decoder718: Decoder[Model718] = deriveDecoder
 implicit val encoder818: Encoder[Model818] = deriveEncoder
 implicit val decoder818: Decoder[Model818] = deriveDecoder
 }
-trait SemiAuto19 {
+trait Derivation19 {
 implicit val encoder119: Encoder[Model119] = deriveEncoder
 implicit val decoder119: Decoder[Model119] = deriveDecoder
 implicit val encoder219: Encoder[Model219] = deriveEncoder
@@ -271,7 +271,7 @@ implicit val decoder719: Decoder[Model719] = deriveDecoder
 implicit val encoder819: Encoder[Model819] = deriveEncoder
 implicit val decoder819: Decoder[Model819] = deriveDecoder
 }
-trait SemiAuto20 {
+trait Derivation20 {
 implicit val encoder120: Encoder[Model120] = deriveEncoder
 implicit val decoder120: Decoder[Model120] = deriveDecoder
 implicit val encoder220: Encoder[Model220] = deriveEncoder
@@ -289,7 +289,7 @@ implicit val decoder720: Decoder[Model720] = deriveDecoder
 implicit val encoder820: Encoder[Model820] = deriveEncoder
 implicit val decoder820: Decoder[Model820] = deriveDecoder
 }
-trait SemiAuto21 {
+trait Derivation21 {
 implicit val encoder121: Encoder[Model121] = deriveEncoder
 implicit val decoder121: Decoder[Model121] = deriveDecoder
 implicit val encoder221: Encoder[Model221] = deriveEncoder
@@ -307,7 +307,7 @@ implicit val decoder721: Decoder[Model721] = deriveDecoder
 implicit val encoder821: Encoder[Model821] = deriveEncoder
 implicit val decoder821: Decoder[Model821] = deriveDecoder
 }
-trait SemiAuto22 {
+trait Derivation22 {
 implicit val encoder122: Encoder[Model122] = deriveEncoder
 implicit val decoder122: Decoder[Model122] = deriveDecoder
 implicit val encoder222: Encoder[Model222] = deriveEncoder
@@ -325,7 +325,7 @@ implicit val decoder722: Decoder[Model722] = deriveDecoder
 implicit val encoder822: Encoder[Model822] = deriveEncoder
 implicit val decoder822: Decoder[Model822] = deriveDecoder
 }
-trait SemiAuto23 {
+trait Derivation23 {
 implicit val encoder123: Encoder[Model123] = deriveEncoder
 implicit val decoder123: Decoder[Model123] = deriveDecoder
 implicit val encoder223: Encoder[Model223] = deriveEncoder
@@ -343,7 +343,7 @@ implicit val decoder723: Decoder[Model723] = deriveDecoder
 implicit val encoder823: Encoder[Model823] = deriveEncoder
 implicit val decoder823: Decoder[Model823] = deriveDecoder
 }
-trait SemiAuto24 {
+trait Derivation24 {
 implicit val encoder124: Encoder[Model124] = deriveEncoder
 implicit val decoder124: Decoder[Model124] = deriveDecoder
 implicit val encoder224: Encoder[Model224] = deriveEncoder
@@ -361,7 +361,7 @@ implicit val decoder724: Decoder[Model724] = deriveDecoder
 implicit val encoder824: Encoder[Model824] = deriveEncoder
 implicit val decoder824: Decoder[Model824] = deriveDecoder
 }
-trait SemiAuto25 {
+trait Derivation25 {
 implicit val encoder125: Encoder[Model125] = deriveEncoder
 implicit val decoder125: Decoder[Model125] = deriveDecoder
 implicit val encoder225: Encoder[Model225] = deriveEncoder
@@ -379,7 +379,7 @@ implicit val decoder725: Decoder[Model725] = deriveDecoder
 implicit val encoder825: Encoder[Model825] = deriveEncoder
 implicit val decoder825: Decoder[Model825] = deriveDecoder
 }
-trait SemiAuto26 {
+trait Derivation26 {
 implicit val encoder126: Encoder[Model126] = deriveEncoder
 implicit val decoder126: Decoder[Model126] = deriveDecoder
 implicit val encoder226: Encoder[Model226] = deriveEncoder
@@ -397,7 +397,7 @@ implicit val decoder726: Decoder[Model726] = deriveDecoder
 implicit val encoder826: Encoder[Model826] = deriveEncoder
 implicit val decoder826: Decoder[Model826] = deriveDecoder
 }
-trait SemiAuto27 {
+trait Derivation27 {
 implicit val encoder127: Encoder[Model127] = deriveEncoder
 implicit val decoder127: Decoder[Model127] = deriveDecoder
 implicit val encoder227: Encoder[Model227] = deriveEncoder
@@ -415,7 +415,7 @@ implicit val decoder727: Decoder[Model727] = deriveDecoder
 implicit val encoder827: Encoder[Model827] = deriveEncoder
 implicit val decoder827: Decoder[Model827] = deriveDecoder
 }
-trait SemiAuto28 {
+trait Derivation28 {
 implicit val encoder128: Encoder[Model128] = deriveEncoder
 implicit val decoder128: Decoder[Model128] = deriveDecoder
 implicit val encoder228: Encoder[Model228] = deriveEncoder
@@ -433,7 +433,7 @@ implicit val decoder728: Decoder[Model728] = deriveDecoder
 implicit val encoder828: Encoder[Model828] = deriveEncoder
 implicit val decoder828: Decoder[Model828] = deriveDecoder
 }
-trait SemiAuto29 {
+trait Derivation29 {
 implicit val encoder129: Encoder[Model129] = deriveEncoder
 implicit val decoder129: Decoder[Model129] = deriveDecoder
 implicit val encoder229: Encoder[Model229] = deriveEncoder
@@ -451,7 +451,7 @@ implicit val decoder729: Decoder[Model729] = deriveDecoder
 implicit val encoder829: Encoder[Model829] = deriveEncoder
 implicit val decoder829: Decoder[Model829] = deriveDecoder
 }
-trait SemiAuto30 {
+trait Derivation30 {
 implicit val encoder130: Encoder[Model130] = deriveEncoder
 implicit val decoder130: Decoder[Model130] = deriveDecoder
 implicit val encoder230: Encoder[Model230] = deriveEncoder

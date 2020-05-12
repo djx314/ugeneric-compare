@@ -1,0 +1,14 @@
+@(eachCount: Int)
+package ugeneric.compare.circe.fail
+
+case class ModelForFail(@for(ii <- 1 to eachCount) {
+    @if(ii % 4 == 0) {
+        i@{ii}: String @if(ii < eachCount) { , }
+    } else if(ii % 4 == 1) {
+        i@{ii}: Int @if(ii < eachCount) { , }
+    } else if (ii % 4 == 2) {
+        i@{ii}: Long @if(ii < eachCount) { , }
+    } else {
+        i@{ii}: Short @if(ii < eachCount) { , }
+    }
+})

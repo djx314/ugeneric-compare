@@ -5,7 +5,7 @@ import io.circe.{ Decoder, Encoder }
 import io.circe.derivation.{ deriveDecoder, deriveEncoder }
 
 @for(i <- minCount to maxCount) {
-trait SemiAuto@{i} {
+trait Derivation@{i} {
     @for(n <- 1 to eachCount) {
         implicit val encoder@{n}@{i}: Encoder[Model@{n}@{i}] = deriveEncoder
         implicit val decoder@{n}@{i}: Decoder[Model@{n}@{i}] = deriveDecoder

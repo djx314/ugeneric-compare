@@ -1,5 +1,5 @@
 package ugeneric.compare
-import io.circe.generic.semiauto._
+import io.circe.generic.semiauto.{ deriveDecoder, deriveEncoder }
 import io.circe.{ Decoder, Encoder }
 trait SemiAuto5 {
 implicit val encoder15: Encoder[Model15] = deriveEncoder
