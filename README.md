@@ -72,3 +72,48 @@ Takes 6s
 sbt>circeCompare
 Takes 10s
 ```
+
+## Circe-Fail
+1.Run
+```scala
+sbt>cleanAll
+sbt>updateAll
+```
+Change a file in https://github.com/djx314/ugeneric-compare/blob/master/modules/circe-fail/models/src/main/scala/ModelForFail.scala makes it compile failed in circe.  
+Run
+```scala
+sbt>circeFailPre
+```
+
+2.Run
+```scala
+sbt>circeFailRaw
+```
+and write the waste time to txt.
+
+3.Run
+```scala
+sbt>circeFailDerivation
+```
+and write the waste time to txt.
+
+4.Run
+```scala
+sbt>circeFailCompare
+```
+and write the waste time to txt.
+
+Then get the slick module test result:
+```scala
+[circe module]
+sbt>cleanAll
+sbt>updateAll
+Change the file to compile fail
+sbt>circeFailPre
+sbt>circeFailRaw
+Takes 63s
+sbt>circeFailDerivation
+Takes 1s
+sbt>circeFailCompare
+Takes 1s
+```
