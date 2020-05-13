@@ -45,6 +45,16 @@ sfmt := {
   (circeModel / Compile / scalafmtSbt).value
   (circeRaw / Compile / scalafmtSbt).value
   (circeCompare / Compile / scalafmtSbt).value
+  (circeDerivation / Compile / scalafmtSbt).value
+
+  (circeFailCodegen / Compile / scalafmtSbt).value
+  (circeFailCodegen / Compile / scalafmt).value
+  (circeFail / Compile / scalafmtSbt).value
+  (circeFail / Compile / scalafmt).value
+  (circeFailModel / Compile / scalafmtSbt).value
+  (circeFailRaw / Compile / scalafmtSbt).value
+  (circeFailCompare / Compile / scalafmtSbt).value
+  (circeFailDerivation / Compile / scalafmtSbt).value
 
   (parent / Compile / scalafmtSbt).value
   (parent / Compile / scalafmt).value
@@ -66,6 +76,13 @@ cleanAll := {
   (circeDerivation / clean).value
   (circeCompare / clean).value
 
+  (circeFail / clean).value
+  (circeFailCodegen / clean).value
+  (circeFailModel / clean).value
+  (circeFailRaw / clean).value
+  (circeFailDerivation / clean).value
+  (circeFailCompare / clean).value
+
   (parent / clean).value
 }
 
@@ -81,8 +98,15 @@ updateAll := {
   (circeCodegen / update).value
   (circeModel / update).value
   (circeRaw / update).value
-  (circeDerivation / clean).value
+  (circeDerivation / update).value
   (circeCompare / update).value
+
+  (circeFail / update).value
+  (circeFailCodegen / update).value
+  (circeFailModel / update).value
+  (circeFailRaw / update).value
+  (circeFailDerivation / clean).value
+  (circeFailCompare / update).value
 }
 
 addCommandAlias("slickCodegen", ";slickCodegen/runMain HListCodegen; slickCodegen/runMain CompareCodegen")
