@@ -4,13 +4,15 @@ val parent = (project in file("."))
 name := "ugeneric-compare"
 
 val modulesDir = file(".") / "modules"
+
+val zsg      = (project in modulesDir / "zsg")
+
 val slickDir   = modulesDir / "slick"
 val slick      = (project in slickDir)
-val asuna      = (project in modulesDir / "asuna")
 
 val slickCodegen = (project in slickDir / "codegen")
 val slickRaw     = (project in slickDir / "raw")
-val slickCompare = (project in slickDir / "compare").dependsOn(asuna)
+val slickCompare = (project in slickDir / "compare").dependsOn(zsg)
 
 val circeDir        = modulesDir / "circe"
 val circe           = (project in circeDir)
@@ -18,7 +20,7 @@ val circeCodegen    = (project in circeDir / "codegen")
 val circeModel      = (project in circeDir / "models")
 val circeRaw        = (project in circeDir / "raw").dependsOn(circeModel)
 val circeDerivation = (project in circeDir / "derivation").dependsOn(circeModel)
-val circeCompare    = (project in circeDir / "compare").dependsOn(circeModel, asuna)
+val circeCompare    = (project in circeDir / "compare").dependsOn(circeModel, zsg)
 
 val circeFailDir        = modulesDir / "circe-fail"
 val circeFail           = (project in circeFailDir)
@@ -26,7 +28,7 @@ val circeFailCodegen    = (project in circeFailDir / "codegen")
 val circeFailModel      = (project in circeFailDir / "models")
 val circeFailRaw        = (project in circeFailDir / "raw").dependsOn(circeFailModel)
 val circeFailDerivation = (project in circeFailDir / "derivation").dependsOn(circeFailModel)
-val circeFailCompare    = (project in circeFailDir / "compare").dependsOn(circeFailModel, asuna)
+val circeFailCompare    = (project in circeFailDir / "compare").dependsOn(circeFailModel, zsg)
 
 val sfmt = taskKey[Unit]("fmt")
 
