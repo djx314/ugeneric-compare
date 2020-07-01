@@ -6,8 +6,8 @@ import io.circe.{ Decoder, Encoder }
 @for(i <- minCount to maxCount) {
 trait UCirce@{i} {
     @for(n <- 1 to eachCount) {
-        implicit val encoder@{n}@{i}: Encoder[Model@{n}@{i}] = org.scalax.ugeneric.circe.UCirce.encodeCaseClass
-        implicit val decoder@{n}@{i}: Decoder[Model@{n}@{i}] = org.scalax.ugeneric.circe.UCirce.decodeCaseClass
+        implicit val encoder@{n}@{i}: Encoder[Model@{n}@{i}] = ugeneric.circe.UCirce.encodeCaseClass(implicit e => _.encodeCaseClass)
+        implicit val decoder@{n}@{i}: Decoder[Model@{n}@{i}] = ugeneric.circe.UCirce.decodeCaseClass(implicit e => _.decodeCaseClass)
     }
 }
 }

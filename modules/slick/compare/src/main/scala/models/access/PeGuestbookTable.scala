@@ -47,7 +47,7 @@ trait PeGuestbookTable {
 
   /** Table description of table PE_GuestBook. Objects of this class serve as prototypes for rows in queries. */
   class PeGuestbook(_tableTag: Tag) extends profile.api.Table[PeGuestbookRow](_tableTag, "PE_GuestBook") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -44,7 +44,7 @@ trait PeAdminTable {
 
   /** Table description of table PE_Admin. Objects of this class serve as prototypes for rows in queries. */
   class PeAdmin(_tableTag: Tag) extends profile.api.Table[PeAdminRow](_tableTag, "PE_Admin") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

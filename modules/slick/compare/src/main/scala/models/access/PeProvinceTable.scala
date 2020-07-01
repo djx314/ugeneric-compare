@@ -17,7 +17,7 @@ trait PeProvinceTable {
 
   /** Table description of table PE_Province. Objects of this class serve as prototypes for rows in queries. */
   class PeProvince(_tableTag: Tag) extends profile.api.Table[PeProvinceRow](_tableTag, "PE_Province") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -23,7 +23,7 @@ trait PeSpacecommentTable {
   /** Table description of table PE_SpaceComment. Objects of this class serve as prototypes for rows in queries.
    *  NOTE: The following names collided with Scala keywords and were escaped: type */
   class PeSpacecomment(_tableTag: Tag) extends profile.api.Table[PeSpacecommentRow](_tableTag, "PE_SpaceComment") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

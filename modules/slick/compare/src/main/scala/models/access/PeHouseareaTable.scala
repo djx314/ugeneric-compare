@@ -17,7 +17,7 @@ trait PeHouseareaTable {
 
   /** Table description of table PE_HouseArea. Objects of this class serve as prototypes for rows in queries. */
   class PeHousearea(_tableTag: Tag) extends profile.api.Table[PeHouseareaRow](_tableTag, "PE_HouseArea") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

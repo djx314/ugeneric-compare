@@ -81,7 +81,7 @@ object CompareCodegen {
 
             override def TableClass = new TableClassDef {
               override def option: String = ""
-              override def star: String   = "def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)"
+              override def star: String   = "def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))"
             }
 
           }

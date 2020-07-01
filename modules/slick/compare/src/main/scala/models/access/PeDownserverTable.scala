@@ -28,7 +28,7 @@ trait PeDownserverTable {
 
   /** Table description of table PE_DownServer. Objects of this class serve as prototypes for rows in queries. */
   class PeDownserver(_tableTag: Tag) extends profile.api.Table[PeDownserverRow](_tableTag, "PE_DownServer") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

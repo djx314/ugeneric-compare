@@ -64,7 +64,7 @@ trait PeHousehzTable {
 
   /** Table description of table PE_HouseHZ. Objects of this class serve as prototypes for rows in queries. */
   class PeHousehz(_tableTag: Tag) extends profile.api.Table[PeHousehzRow](_tableTag, "PE_HouseHZ") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

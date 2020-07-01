@@ -18,7 +18,7 @@ trait PeFskindTable {
 
   /** Table description of table PE_FsKind. Objects of this class serve as prototypes for rows in queries. */
   class PeFskind(_tableTag: Tag) extends profile.api.Table[PeFskindRow](_tableTag, "PE_FsKind") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

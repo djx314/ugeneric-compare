@@ -44,7 +44,7 @@ trait PeOrderformTable {
 
   /** Table description of table PE_OrderForm. Objects of this class serve as prototypes for rows in queries. */
   class PeOrderform(_tableTag: Tag) extends profile.api.Table[PeOrderformRow](_tableTag, "PE_OrderForm") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

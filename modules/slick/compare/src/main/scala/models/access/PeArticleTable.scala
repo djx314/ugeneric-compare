@@ -66,7 +66,7 @@ trait PeArticleTable {
 
   /** Table description of table PE_Article. Objects of this class serve as prototypes for rows in queries. */
   class PeArticle(_tableTag: Tag) extends profile.api.Table[PeArticleRow](_tableTag, "PE_Article") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -16,7 +16,7 @@ trait PeSupplyCompanyTable {
 
   /** Table description of table PE_Supply_Company. Objects of this class serve as prototypes for rows in queries. */
   class PeSupplyCompany(_tableTag: Tag) extends profile.api.Table[PeSupplyCompanyRow](_tableTag, "PE_Supply_Company") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

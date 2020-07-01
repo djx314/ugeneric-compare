@@ -15,7 +15,7 @@ trait PeNotdownTable {
 
   /** Table description of table PE_NotDown. Objects of this class serve as prototypes for rows in queries. */
   class PeNotdown(_tableTag: Tag) extends profile.api.Table[PeNotdownRow](_tableTag, "PE_NotDown") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
 
     /** Database column notdown SqlType(VARBINARY) */
     val notdown: Rep[Option[java.sql.Blob]] = column[Option[java.sql.Blob]]("notdown")

@@ -19,7 +19,7 @@ trait PeNewkeysTable {
 
   /** Table description of table PE_NewKeys. Objects of this class serve as prototypes for rows in queries. */
   class PeNewkeys(_tableTag: Tag) extends profile.api.Table[PeNewkeysRow](_tableTag, "PE_NewKeys") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

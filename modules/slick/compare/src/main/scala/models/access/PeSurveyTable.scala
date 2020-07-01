@@ -29,7 +29,7 @@ trait PeSurveyTable {
 
   /** Table description of table PE_Survey. Objects of this class serve as prototypes for rows in queries. */
   class PeSurvey(_tableTag: Tag) extends profile.api.Table[PeSurveyRow](_tableTag, "PE_Survey") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

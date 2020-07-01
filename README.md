@@ -66,11 +66,11 @@ sbt>cleanAll
 sbt>updateAll
 sbt>circePre
 sbt>circeRaw
-Takes 49s
+Takes 48s
 sbt>circeDerivation
 Takes 6s
 sbt>circeCompare
-Takes 10s
+Takes 21s
 ```
 
 ## Circe-Fail

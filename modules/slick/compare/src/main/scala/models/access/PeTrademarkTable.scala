@@ -25,7 +25,7 @@ trait PeTrademarkTable {
 
   /** Table description of table PE_Trademark. Objects of this class serve as prototypes for rows in queries. */
   class PeTrademark(_tableTag: Tag) extends profile.api.Table[PeTrademarkRow](_tableTag, "PE_Trademark") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

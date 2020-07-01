@@ -19,7 +19,7 @@ trait PeFriendTable {
 
   /** Table description of table PE_Friend. Objects of this class serve as prototypes for rows in queries. */
   class PeFriend(_tableTag: Tag) extends profile.api.Table[PeFriendRow](_tableTag, "PE_Friend") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

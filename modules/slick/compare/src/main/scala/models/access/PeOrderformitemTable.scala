@@ -29,7 +29,7 @@ trait PeOrderformitemTable {
 
   /** Table description of table PE_OrderFormItem. Objects of this class serve as prototypes for rows in queries. */
   class PeOrderformitem(_tableTag: Tag) extends profile.api.Table[PeOrderformitemRow](_tableTag, "PE_OrderFormItem") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

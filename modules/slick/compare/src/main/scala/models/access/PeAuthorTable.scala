@@ -37,7 +37,7 @@ trait PeAuthorTable {
 
   /** Table description of table PE_Author. Objects of this class serve as prototypes for rows in queries. */
   class PeAuthor(_tableTag: Tag) extends profile.api.Table[PeAuthorRow](_tableTag, "PE_Author") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

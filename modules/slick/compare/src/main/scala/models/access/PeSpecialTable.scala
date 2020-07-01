@@ -28,7 +28,7 @@ trait PeSpecialTable {
 
   /** Table description of table PE_Special. Objects of this class serve as prototypes for rows in queries. */
   class PeSpecial(_tableTag: Tag) extends profile.api.Table[PeSpecialRow](_tableTag, "PE_Special") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -79,7 +79,7 @@ trait PeChannelTable {
 
   /** Table description of table PE_Channel. Objects of this class serve as prototypes for rows in queries. */
   class PeChannel(_tableTag: Tag) extends profile.api.Table[PeChannelRow](_tableTag, "PE_Channel") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

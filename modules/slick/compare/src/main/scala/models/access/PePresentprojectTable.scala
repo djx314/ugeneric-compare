@@ -26,7 +26,7 @@ trait PePresentprojectTable {
 
   /** Table description of table PE_PresentProject. Objects of this class serve as prototypes for rows in queries. */
   class PePresentproject(_tableTag: Tag) extends profile.api.Table[PePresentprojectRow](_tableTag, "PE_PresentProject") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 

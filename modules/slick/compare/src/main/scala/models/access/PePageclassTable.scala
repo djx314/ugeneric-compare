@@ -18,7 +18,7 @@ trait PePageclassTable {
 
   /** Table description of table PE_PageClass. Objects of this class serve as prototypes for rows in queries. */
   class PePageclass(_tableTag: Tag) extends profile.api.Table[PePageclassRow](_tableTag, "PE_PageClass") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
     /** Maps whole row to an option. Useful for outer joins. */
 
 
