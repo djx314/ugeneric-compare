@@ -5,10 +5,10 @@ name := "ugeneric-compare"
 
 val modulesDir = file(".") / "modules"
 
-val zsg      = (project in modulesDir / "zsg")
+val zsg = (project in modulesDir / "zsg")
 
-val slickDir   = modulesDir / "slick"
-val slick      = (project in slickDir)
+val slickDir = modulesDir / "slick"
+val slick    = (project in slickDir)
 
 val slickCodegen = (project in slickDir / "codegen")
 val slickRaw     = (project in slickDir / "raw")
