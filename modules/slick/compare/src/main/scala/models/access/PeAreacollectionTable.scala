@@ -28,7 +28,7 @@ trait PeAreacollectionTable {
   /** Table description of table PE_AreaCollection. Objects of this class serve as prototypes for rows in queries.
    *  NOTE: The following names collided with Scala keywords and were escaped: type */
   class PeAreacollection(_tableTag: Tag) extends profile.api.Table[PeAreacollectionRow](_tableTag, "PE_AreaCollection") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

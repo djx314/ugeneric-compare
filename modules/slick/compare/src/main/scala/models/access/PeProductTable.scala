@@ -79,7 +79,7 @@ trait PeProductTable {
 
   /** Table description of table PE_Product. Objects of this class serve as prototypes for rows in queries. */
   class PeProduct(_tableTag: Tag) extends profile.api.Table[PeProductRow](_tableTag, "PE_Product") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -58,7 +58,7 @@ trait PeUserTable {
 
   /** Table description of table PE_User. Objects of this class serve as prototypes for rows in queries. */
   class PeUser(_tableTag: Tag) extends profile.api.Table[PeUserRow](_tableTag, "PE_User") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

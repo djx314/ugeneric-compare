@@ -25,7 +25,7 @@ trait PeLabelTable {
 
   /** Table description of table PE_Label. Objects of this class serve as prototypes for rows in queries. */
   class PeLabel(_tableTag: Tag) extends profile.api.Table[PeLabelRow](_tableTag, "PE_Label") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

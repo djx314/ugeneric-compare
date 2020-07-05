@@ -62,7 +62,7 @@ trait PeSoftTable {
 
   /** Table description of table PE_Soft. Objects of this class serve as prototypes for rows in queries. */
   class PeSoft(_tableTag: Tag) extends profile.api.Table[PeSoftRow](_tableTag, "PE_Soft") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

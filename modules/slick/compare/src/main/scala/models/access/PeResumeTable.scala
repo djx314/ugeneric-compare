@@ -43,7 +43,7 @@ trait PeResumeTable {
 
   /** Table description of table PE_Resume. Objects of this class serve as prototypes for rows in queries. */
   class PeResume(_tableTag: Tag) extends profile.api.Table[PeResumeRow](_tableTag, "PE_Resume") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -28,7 +28,7 @@ trait PeAdzoneTable {
 
   /** Table description of table PE_AdZone. Objects of this class serve as prototypes for rows in queries. */
   class PeAdzone(_tableTag: Tag) extends profile.api.Table[PeAdzoneRow](_tableTag, "PE_AdZone") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

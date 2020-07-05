@@ -25,7 +25,7 @@ trait PeConsumelogTable {
 
   /** Table description of table PE_ConsumeLog. Objects of this class serve as prototypes for rows in queries. */
   class PeConsumelog(_tableTag: Tag) extends profile.api.Table[PeConsumelogRow](_tableTag, "PE_ConsumeLog") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

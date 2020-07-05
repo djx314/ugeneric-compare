@@ -34,7 +34,7 @@ trait PeCopyfromTable {
 
   /** Table description of table PE_CopyFrom. Objects of this class serve as prototypes for rows in queries. */
   class PeCopyfrom(_tableTag: Tag) extends profile.api.Table[PeCopyfromRow](_tableTag, "PE_CopyFrom") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

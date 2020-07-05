@@ -18,7 +18,7 @@ trait PeClassroomTable {
 
   /** Table description of table PE_Classroom. Objects of this class serve as prototypes for rows in queries. */
   class PeClassroom(_tableTag: Tag) extends profile.api.Table[PeClassroomRow](_tableTag, "PE_Classroom") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -165,7 +165,7 @@ trait PeConfigTable {
 
   /** Table description of table PE_Config. Objects of this class serve as prototypes for rows in queries. */
   class PeConfig(_tableTag: Tag) extends profile.api.Table[PeConfigRow](_tableTag, "PE_Config") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -25,7 +25,7 @@ trait PePayplatformTable {
 
   /** Table description of table PE_PayPlatform. Objects of this class serve as prototypes for rows in queries. */
   class PePayplatform(_tableTag: Tag) extends profile.api.Table[PePayplatformRow](_tableTag, "PE_PayPlatform") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 

@@ -22,7 +22,7 @@ trait PePositionsupplyinfoTable {
 
   /** Table description of table PE_PositionSupplyInfo. Objects of this class serve as prototypes for rows in queries. */
   class PePositionsupplyinfo(_tableTag: Tag) extends profile.api.Table[PePositionsupplyinfoRow](_tableTag, "PE_PositionSupplyInfo") {
-    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(implicit e => _.mapWithTable(this))
+    def * = org.scalax.ugeneric.slick.USlick.mapWithTable(this)
     /** Maps whole row to an option. Useful for outer joins. */
 
 
