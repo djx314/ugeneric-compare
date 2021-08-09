@@ -59,7 +59,7 @@ sbt>circeCompare
 ```
 and write the waste time to txt.
 
-Then get the slick module test result:
+Then get the circe module test result:
 ```scala
 [circe module]
 sbt>cleanAll
@@ -104,7 +104,7 @@ sbt>circeFailCompare
 ```
 and write the waste time to txt.
 
-Then get the slick module test result:
+Then get the circe fail module test result:
 ```scala
 [circe fail module]
 sbt>cleanAll
