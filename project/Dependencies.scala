@@ -10,12 +10,12 @@ object Dependencies {
 
   val ucanaccess = List("com.healthmarketscience.jackcess" % "jackcess" % "4.0.1", "net.sf.ucanaccess" % "ucanaccess" % "5.0.1", "org.hsqldb" % "hsqldb" % "2.6.0")
 
-  val ugenericSlick = "org.scalax" %% "ugeneric-slick" % "0.0.2-SNAP2021080901"
+  val ugenericSlick = "org.scalax" %% "ugeneric-slick" % "0.0.2-SNAP2021091201"
 
   val circe = ("io.circe" %% "circe-derivation" % "0.13.0-M5") :: List(
     "io.circe" %% "circe-core",
     "io.circe" %% "circe-generic",
     "io.circe" %% "circe-parser"
-  ).map(_ % "0.14.1")
+  ).map(_ % "0.15.0-M1")
 
 }
